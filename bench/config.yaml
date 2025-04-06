@@ -1,0 +1,28 @@
+concurrency: 16
+samples: 1000000
+
+tests:
+  - name: "Syncs - InterlockedIncrement"
+    load: BenchSyncs.dll
+    init: "interlocked-inc"
+    context_init: "ctx-interlocked"
+  - name: "Syncs - InterlockedAdd"
+    load: BenchSyncs.dll
+    init: "interlocked-add"
+    context_init: "ctx-interlocked"
+  - name: "Syncs - std::atomic increment"
+    load: BenchSyncs.dll
+    init: "atomic-inc"
+    context_init: "ctx-atomic"
+  - name: "Syncs - std::atomic add"
+    load: BenchSyncs.dll
+    init: "atomic-add"
+    context_init: "ctx-atomic"
+  - name: "Syncs - Critical Section"
+    load: BenchSyncs.dll
+    init: "cs"
+    context_init: "ctx-cs"
+  - name: "Syncs - Critical Section with spin count"
+    load: BenchSyncs.dll
+    init: "cs-spin"
+    context_init: "ctx-cs-spin"
