@@ -39,6 +39,12 @@
     <ClInclude Include="tests\TestCriticalSection.h">
       <Filter>Header Files\tests</Filter>
     </ClInclude>
+    <ClInclude Include="tests\TestMutex.h">
+      <Filter>Header Files\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\TestSRWLock.h">
+      <Filter>Header Files\tests</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

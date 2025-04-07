@@ -35,6 +35,14 @@ The plugin provides the following test types:
    - `cs`: Tests standard Critical Section
    - `cs-spin`: Tests spin-based Critical Section
 
+4. **Mutexes**
+   - `mutex`: Tests std::mutex
+   - `mutex-shared`: Tests std::mutex-shared in exclusive mode
+   - `mutex-winapi`: Tests Windows API mutex in exclusive mode
+
+5. **SWRLOCK**
+   - `srwlock`: Tests SRWLOCK in exclusive mode
+
 ## Context Types
 
 Each test type has its corresponding context:
@@ -43,6 +51,8 @@ Each test type has its corresponding context:
 - `ctx-atomic`: Context for Atomic operations
 - `ctx-cs`: Context for standard Critical Section
 - `ctx-cs-spin`: Context for spin-based Critical Section
+- `ctx-mutex`: Context for mutexes
+- `ctx-srwlock`: Context for SRWLOCK
 
 ## Building
 

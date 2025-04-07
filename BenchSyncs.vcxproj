@@ -101,6 +101,8 @@
     <ClInclude Include="tests\TestCriticalSection.h" />
     <ClInclude Include="tests\TestInterlocked.h" />
     <ClInclude Include="tests\Test.h" />
+    <ClInclude Include="tests\TestMutex.h" />
+    <ClInclude Include="tests\TestSRWLock.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

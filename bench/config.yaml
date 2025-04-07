@@ -26,3 +26,19 @@ tests:
     load: BenchSyncs.dll
     init: "cs-spin"
     context_init: "ctx-cs-spin"
+  - name: "Syncs - std::mutex exclusive"
+    load: BenchSyncs.dll
+    init: "mutex"
+    context_init: "ctx-mutex"
+  - name: "Syncs - std::shared_mutex exclusive"
+    load: BenchSyncs.dll
+    init: "mutex-shared"
+    context_init: "ctx-mutex"
+  - name: "Syncs - Windows API mutex exclusive"
+    load: BenchSyncs.dll
+    init: "mutex-winapi"
+    context_init: "ctx-mutex"
+  - name: "Syncs - SRWLock exclusive"
+    load: BenchSyncs.dll
+    init: "srwlock"
+    context_init: "ctx-srwlock"
