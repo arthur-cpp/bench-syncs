@@ -15,6 +15,8 @@ BenchSyncs is a plugin that implements performance tests for different synchroni
   - Interlocked operations (increment and add)
   - Atomic operations (increment and add)
   - Critical Sections (standard and spin-based)
+  - Mutexes
+  - SRWLOCK (exclusive mode)
 - Configurable test contexts for each synchronization type
 - Thread-safe implementation
 - Detailed performance measurements
